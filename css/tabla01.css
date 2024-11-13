@@ -1,0 +1,30 @@
+th {
+    background-color: #000;
+}
+.main {
+    height: 350px;
+    background-image: url('../imagen/fondotable.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.tabla01 {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #c9c8c8;
+    color: #066f98;
+    text-align: center;
+}

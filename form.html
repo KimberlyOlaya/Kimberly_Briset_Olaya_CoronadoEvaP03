@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poryecto Web T09 - Formularios, Mapas y Tablas</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/estiloforms.css">
+</head>
+<body>
+    <header>
+        <h1>T09 Desarrollo Web</h1>
+        <nav>
+            <ul>
+                <li><a href="form.html">Formulario</a></li>
+                <li><a href="tabla.html">Tabla</a></li>
+                <li><a href="mapas.html">Mapas</a></li>
+                <li><a href="grid.html">Grid</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="contacto-section">
+            <div class="container">
+                <h2>Formulario de Contacto</h2>
+                <form name="contacto">
+                    <!-- Campo de Nombre -->
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <!-- Campo de Correo Electrónico -->
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <!-- Campo de Edad (Range) -->
+                    <label for="age">Edad:</label>
+                    <input type="range" id="age" name="age" min="18" max="100" value="30" oninput="ageOutput.value = age.value">
+                    <output id="ageOutput">30</output>
+    
+                    <!-- Campo de Distrito (Select) -->
+                    <label >Distrito:</label>
+                    <select  name="district" required>
+                        <option value="" disabled selected>Selecciona tu distrito</option>
+                        <option value="san_isidro">San Isidro</option>
+                        <option value="miraflores">Miraflores</option>
+                        <option value="barranco">Barranco</option>
+                        <option value="surco">Surco</option>
+                        <option value="la_molina">La Molina</option>
+                    </select>
+    
+                    <!-- Campo de Sexo (Option) -->
+                    <label>Sexo:</label>
+                    <div class="options01">
+                        <label >
+                            <input type="radio" id="male" name="gender" value="male" required>
+                            Masculino
+                        </label>
+                        <label >
+                            <input type="radio" id="female" name="gender" value="female">
+                            Femenino
+                        </label>
+                      
+                    </div>
+    
+                    <!-- Campo de Fecha de Nacimiento -->
+                    <label >Fecha de Nacimiento:</label>
+                    <input type="date"  name="birthdate" required>
+    
+                    <!-- Campo de Comentarios (Textarea) -->
+                    <label >Comentarios:</label>
+                    <textarea  name="comments" rows="5" placeholder="Escribe tus comentarios aquí..." required></textarea>
+    
+                    <!-- Otros campos adicionales -->
+                    <label >Número de Teléfono:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(XXX) XXX-XXXX">
+    
+                    <!-- Botón de Envío -->
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
